@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Chawla — AI/ML Portfolio</title>
+  <meta name="description" content="Aditya Chawla — AI/ML Engineer | LLMs | RAG | Graph ML | Autonomous Systems" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A0%3C/text%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Fintech-clean typography + subtle palette
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui', 'SF Pro Display', 'Inter', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial'],
+            mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New'],
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(0,0,0,.06)",
+            card: "0 12px 40px rgba(15, 23, 42, .08)",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <!-- Top Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-slate-50/70 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-semibold tracking-tight text-slate-900">Aditya Chawla</a>
+      <nav class="hidden md:flex gap-6 text-sm text-slate-600">
+        <a class="hover:text-slate-900" href="#projects">Projects</a>
+        <a class="hover:text-slate-900" href="#education">Education</a>
+        <a class="hover:text-slate-900" href="#skills">Skills</a>
+        <a class="hover:text-slate-900" href="#contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://github.com/aditya-chawla" target="_blank" class="text-sm px-3 py-1.5 rounded-full bg-slate-900 text-white hover:opacity-90 shadow-soft">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" class="text-sm px-3 py-1.5 rounded-full bg-white border border-slate-200 hover:bg-slate-100">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-4 pt-12 pb-10">
+    <div class="grid md:grid-cols-12 gap-8 items-center">
+      <div class="md:col-span-8">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs text-slate-700 shadow-soft">
+          <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+          Open to AI/ML internships & research collaborations
+        </div>
+        <h1 class="mt-4 text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
+          AI/ML Engineer building <span class="text-slate-700">LLM + RAG</span> systems, graph ML models, and autonomous prediction pipelines.
+        </h1>
+        <p class="mt-4 text-lg text-slate-600 leading-relaxed">
+          M.S. Artificial Intelligence @ San José State University (CGPA 3.85/4.0). 
+          Interests: Agentic AI, trustworthy model evaluation, autonomous systems, and applied fintech-style analytics experiences.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm">LLMs</span>
+          <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm">RAG</span>
+          <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm">LangGraph</span>
+          <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm">Graph ML</span>
+          <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm">Autonomous Systems</span>
+          <span class="px-3 py-1 rounded-full bg-white border border-slate-200 text-sm">CUDA</span>
+        </div>
+
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="#projects" class="px-5 py-2.5 rounded-xl bg-slate-900 text-white hover:opacity-90 shadow-card">View Projects</a>
+          <a href="#contact" class="px-5 py-2.5 rounded-xl bg-white border border-slate-200 hover:bg-slate-100">Contact</a>
+          <a href="mailto:adityachawla08@gmail.com" class="px-5 py-2.5 rounded-xl bg-white border border-slate-200 hover:bg-slate-100">Email Me</a>
+        </div>
+
+        <div class="mt-6 text-sm text-slate-600">
+          <div><span class="font-medium text-slate-800">San Jose, CA</span> • <span class="font-medium text-slate-800">+1 669-292-7175</span> • <span class="font-medium text-slate-800">adityachawla08@gmail.com</span></div>
+        </div>
+      </div>
+
+      <div class="md:col-span-4">
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card">
+          <h2 class="text-sm font-semibold text-slate-900">Highlights</h2>
+          <ul class="mt-4 space-y-3 text-sm text-slate-700">
+            <li class="flex gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-slate-900"></span>
+              Qualcomm Engineering Scholarship recipient (College of Engineering).
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-slate-900"></span>
+              Built agentic financial assistant with voice + charts + citations.
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-slate-900"></span>
+              Autonomous driving: detection + trajectory forecasting (VectorNet, LightEMMA).
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-slate-900"></span>
+              Biomedical RAG with BioGPT + NCBI Entrez (PubMedQA).
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-12">
+    <div class="flex items-end justify-between gap-6">
+      <div>
+        <h2 class="text-2xl font-semibold tracking-tight">Selected Projects</h2>
+        <p class="mt-2 text-slate-600">Modern, production-oriented systems across agentic AI, RAG, graph ML, and autonomous prediction.</p>
+      </div>
+      <a href="https://github.com/aditya-chawla" target="_blank" class="hidden sm:inline text-sm text-slate-700 hover:text-slate-900 underline underline-offset-4">
+        View all repositories →
+      </a>
+    </div>
+
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <!-- Fingentic -->
+      <article class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card hover:-translate-y-0.5 transition">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Fingentic — Agentic Financial AI Assistant</h3>
+          <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">May–Jun 2025</span>
+        </div>
+        <p class="mt-3 text-slate-600">
+          Agentic platform for non-technical users to explore company financials, stock prices & trends via text + voice, delivering insights with charts, tables, and cited summaries.
+        </p>
+        <ul class="mt-4 text-sm text-slate-700 space-y-2">
+          <li>• LangChain + LangGraph tool orchestration, SQL generation, web search fallback, guardrails & transparent citations.</li>
+          <li>• Realtime APIs + voice workflow (Whisper) for conversational finance UX.</li>
+        </ul>
+        <div class="mt-5 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="px-2 py-1 rounded-full bg-slate-100">LangGraph</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Gemma-27B</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">SQLite</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Gradio</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">yFinance</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Guardrails</span>
+        </div>
+        <div class="mt-6 flex gap-3">
+          <a class="text-sm font-medium text-slate-900 hover:underline underline-offset-4" target="_blank" href="https://github.com/aditya-chawla/Fingentic">GitHub →</a>
+        </div>
+      </article>
+
+      <!-- BioMedRAG -->
+      <article class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card hover:-translate-y-0.5 transition">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">BioMedRAG — Biomedical QA (BioGPT + NCBI)</h3>
+          <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">Aug–Dec 2024</span>
+        </div>
+        <p class="mt-3 text-slate-600">
+          Retrieval-Augmented Generation system integrating BioGPT with NCBI Entrez for biomedical question answering; ~78% accuracy on PubMedQA.
+        </p>
+        <ul class="mt-4 text-sm text-slate-700 space-y-2">
+          <li>• Built retrieval + generation pipeline, evaluation workflow, and interactive UI demo.</li>
+          <li>• Reported peak batch accuracy during evaluation and compared with baselines.</li>
+        </ul>
+        <div class="mt-5 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="px-2 py-1 rounded-full bg-slate-100">RAG</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">BioGPT</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Hugging Face</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">CUDA</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Gradio</span>
+        </div>
+        <div class="mt-6 flex gap-3">
+          <a class="text-sm font-medium text-slate-900 hover:underline underline-offset-4" target="_blank" href="https://github.com/aditya-chawla/Biomedical-RAG-LLM">GitHub →</a>
+        </div>
+      </article>
+
+      <!-- VectorNet -->
+      <article class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card hover:-translate-y-0.5 transition">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">VectorNet — Graph-Based Trajectory Forecasting</h3>
+          <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">Jan–May 2025</span>
+        </div>
+        <p class="mt-3 text-slate-600">
+          Implemented VectorNet (two-stage GNN) for motion prediction using Argoverse 1.0, including polyline SubGraphs and global self-attention.
+        </p>
+        <ul class="mt-4 text-sm text-slate-700 space-y-2">
+          <li>• Hand-crafted features from raw CSVs; built per-scenario graph datasets for ego, lanes, and surrounding agents.</li>
+          <li>• Visualized and evaluated predicted trajectories vs. ground truth.</li>
+        </ul>
+        <div class="mt-5 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="px-2 py-1 rounded-full bg-slate-100">PyTorch Geometric</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">GNN</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Attention</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Argoverse</span>
+        </div>
+        <div class="mt-6 flex gap-3">
+          <a class="text-sm font-medium text-slate-900 hover:underline underline-offset-4" target="_blank" href="https://github.com/aditya-chawla/VectorNet">GitHub →</a>
+        </div>
+      </article>
+
+      <!-- LLM Advisor -->
+      <article class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card hover:-translate-y-0.5 transition">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">LLM Advisor — Trust-Based Model Recommender</h3>
+          <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">Aug–Dec 2025</span>
+        </div>
+        <p class="mt-3 text-slate-600">
+          Two-stage evaluation pipeline profiling open-source LLMs on toxicity, bias, truthfulness, and safety; plus an advisor that recommends models based on user priorities.
+        </p>
+        <ul class="mt-4 text-sm text-slate-700 space-y-2">
+          <li>• Reproducible trust profiles for ethical deployment; explained trade-offs across safety/fairness/factual reliability.</li>
+          <li>• Built Streamlit dashboard with plots and an LLM-powered explanation layer.</li>
+        </ul>
+        <div class="mt-5 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="px-2 py-1 rounded-full bg-slate-100">Groq</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Hugging Face</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Detoxify</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Streamlit</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Plotly</span>
+        </div>
+      </article>
+
+      <!-- Object Detection -->
+      <article class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card hover:-translate-y-0.5 transition">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Object Detection for Autonomous Driving</h3>
+          <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">Sep–Oct 2025</span>
+        </div>
+        <p class="mt-3 text-slate-600">
+          Trained Faster R-CNN and YOLOv8 on Waymo and mixed Waymo+KITTI datasets with unified 3-class taxonomy; improved cross-dataset consistency and mAP.
+        </p>
+        <ul class="mt-4 text-sm text-slate-700 space-y-2">
+          <li>• Faster R-CNN: tighter boxes + better occlusion handling.</li>
+          <li>• YOLOv8: ~3× faster inference with strong accuracy.</li>
+        </ul>
+        <div class="mt-5 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="px-2 py-1 rounded-full bg-slate-100">CUDA</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">YOLOv8</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Faster R-CNN</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Waymo</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">KITTI</span>
+        </div>
+      </article>
+
+      <!-- Graph-of-Thought -->
+      <article class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card hover:-translate-y-0.5 transition">
+        <div class="flex items-center justify-between">
+          <h3 class="text-lg font-semibold">Graph-of-Thought Trajectory Prediction (LightEMMA)</h3>
+          <span class="text-xs px-2 py-1 rounded-full bg-slate-100 text-slate-700">Nov–Dec 2025</span>
+        </div>
+        <p class="mt-3 text-slate-600">
+          Integrated Graph-of-Thought reasoning into LightEMMA VLM trajectory prediction, adding multi-intent generation, branch scoring, and refinement to improve motion forecasting on nuScenes vs CoT baselines.
+        </p>
+        <ul class="mt-4 text-sm text-slate-700 space-y-2">
+          <li>• Used Claude Sonnet 4.5 and Google Gemini Flash 2.0 for reasoning + scoring workflow.</li>
+          <li>• Focus: higher-quality forecasting via structured branching and refinement.</li>
+        </ul>
+        <div class="mt-5 flex flex-wrap gap-2 text-xs text-slate-700">
+          <span class="px-2 py-1 rounded-full bg-slate-100">VLMs</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">Transformers</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">nuScenes</span>
+          <span class="px-2 py-1 rounded-full bg-slate-100">OpenCV</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- Additional portfolio repos -->
+    <div class="mt-10 bg-white border border-slate-200 rounded-2xl p-6 shadow-card">
+      <h3 class="text-lg font-semibold">More Repositories</h3>
+      <p class="mt-2 text-slate-600">Learning repositories with algorithms implemented from scratch.</p>
+      <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-sm">
+        <a class="px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 hover:bg-slate-100" target="_blank" href="https://github.com/aditya-chawla/Machine-Learning">Machine Learning →</a>
+        <a class="px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 hover:bg-slate-100" target="_blank" href="https://github.com/aditya-chawla/Deep-Learning">Deep Learning →</a>
+        <a class="px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 hover:bg-slate-100" target="_blank" href="https://github.com/aditya-chawla/Natural-Language-Processing">NLP →</a>
+        <a class="px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 hover:bg-slate-100" target="_blank" href="https://github.com/aditya-chawla/-Object-Oriented-Programming">OOP →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold tracking-tight">Education</h2>
+
+    <div class="mt-6 grid gap-6">
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+          <div>
+            <h3 class="text-lg font-semibold">San José State University — M.S. Artificial Intelligence</h3>
+            <p class="text-slate-600">San Jose, CA • CGPA: 3.85/4.0</p>
+          </div>
+          <span class="text-sm text-slate-700 px-3 py-1.5 rounded-full bg-slate-100 w-fit">Aug 2024 – May 2026</span>
+        </div>
+        <div class="mt-4 text-sm text-slate-700">
+          <p><span class="font-semibold">Award:</span> Qualcomm Engineering Scholarship (College of Engineering)</p>
+          <p class="mt-2"><span class="font-semibold">Coursework:</span> Machine Learning, NLP, ML on Graphs, Math for Data Science, AI & Data Engineering, Deep Learning, Reinforcement Learning, Autonomous Systems</p>
+          <p class="mt-2"><span class="font-semibold">Ongoing:</span> Agentic AI copilot for BI software: insights automation, Q&A, dashboard generation, real-time anomaly detection (Google A2A + Claude MCP).</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+          <div>
+            <h3 class="text-lg font-semibold">Thapar Institute of Engineering and Technology — B.E. ECE</h3>
+            <p class="text-slate-600">Patiala, India • CGPA: 8.4/10</p>
+          </div>
+          <span class="text-sm text-slate-700 px-3 py-1.5 rounded-full bg-slate-100 w-fit">Aug 2019 – Jun 2023</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-semibold tracking-tight">Skills</h2>
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card">
+        <h3 class="font-semibold">AI / ML</h3>
+        <p class="mt-3 text-sm text-slate-700 leading-relaxed">
+          LLMs, RAG, Agentic AI, Prompting, Model evaluation (bias/toxicity/truthfulness), Deep Learning, RL, Graph Neural Networks, Motion forecasting, Object detection.
+        </p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card">
+        <h3 class="font-semibold">Tools & Frameworks</h3>
+        <p class="mt-3 text-sm text-slate-700 leading-relaxed">
+          PyTorch, PyTorch Geometric, TensorFlow/Keras, Hugging Face, LangChain, LangGraph, Streamlit, Gradio, OpenCV, scikit-learn, SciPy, Plotly.
+        </p>
+      </div>
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-card">
+        <h3 class="font-semibold">Engineering</h3>
+        <p class="mt-3 text-sm text-slate-700 leading-relaxed">
+          Python, SQL, CUDA, data pipelines, experiment tracking, evaluation harnesses, visualization, notebook-to-demo workflows, Git/GitHub.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-12">
+    <div class="bg-slate-900 rounded-3xl p-8 md:p-10 text-white shadow-card">
+      <h2 class="text-2xl font-semibold tracking-tight">Let’s connect</h2>
+      <p class="mt-2 text-slate-200">For internships, research, or building production-grade LLM systems.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a class="px-5 py-2.5 rounded-xl bg-white text-slate-900 hover:opacity-95" href="mailto:adityachawla08@gmail.com">Email</a>
+        <a class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700" target="_blank" href="https://github.com/aditya-chawla">GitHub</a>
+        <a class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700" target="_blank" href="https://www.linkedin.com/">LinkedIn</a>
+      </div>
+      <p class="mt-6 text-sm text-slate-300">© <span id="year"></span> Aditya Chawla</p>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
